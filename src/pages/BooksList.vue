@@ -11,7 +11,7 @@
 </div>
 </template>
 <script>
-import AppPost from '../components/AppBook.vue';
+import AppBook from '../components/AppBook.vue';
 import axios from 'axios';
 export default {
     name:'BooksList',
@@ -20,12 +20,12 @@ export default {
     },
     data() {
         return {
-            posts : [],
+            books : [],
             urlAddress: 'http://127.0.0.1:8000/api/books',
         }
     },
     methods: {
-    getPosts() {
+    getBooks() {
         axios.get(this.urlAddress, {
         params: {}
         })
@@ -39,7 +39,7 @@ export default {
     }
     },
     created() {
-        this.getPosts();
+        this.getBooks();
     },
 }
 </script>

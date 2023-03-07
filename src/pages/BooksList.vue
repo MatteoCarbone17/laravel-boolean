@@ -7,7 +7,7 @@
         </div>
     </div>
 <div class="row justify-content-around">
-    <AppPost  v-for="book in books" :book="book" class="col-4"/>
+    <AppBook v-for="book in books" :book="book" class="col-4"/>
 </div>
 </template>
 <script>

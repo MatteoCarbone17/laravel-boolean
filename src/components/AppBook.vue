@@ -58,7 +58,7 @@ export default {
             <span class="d-block">Prezzo: {{ book.price }}&euro; </span>
         </div>
         <div class="col-2 mt-3">
-            <router-link v-if="!isShow" :to="{ name: 'book', params: { id: book.id } }" class="btn btn-outline-success">
+            <router-link v-if="!isShow" :class="this.$route.name === 'book' ? 'd-none' : '' " :to="{ name: 'book', params: { id: book.id } }" class="btn btn-outline-success">
                 Visualiza
             </router-link>
         </div>

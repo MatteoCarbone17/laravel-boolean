@@ -9,7 +9,7 @@ export default {
     },
     data() {
         return {
-            Book: '',
+            book: '',
             ApiUrl: "http://127.0.0.1:8000/api/books/",
         };
     },
@@ -20,7 +20,7 @@ export default {
                 }
             })
                 .then((response) => {
-                    this.Book = response.data.results;
+                    this.book = response.data.results;
                     console.warn(this.book)
                 })
                 .catch(function (error) {

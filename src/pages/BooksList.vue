@@ -30,7 +30,7 @@ export default {
         params: {}
         })
         .then((response) => {
-            this.posts= response.data.results.data;
+            this.books= response.data.results.data;
             console.log(this.books);
         })
         .catch(function (error) {
